@@ -1,8 +1,8 @@
-dash-charlotte
+dash-charlotte == 0.2.1
 
-dash
-dash-bootstrap-components
-dash-labs
-gunicorn
-plotly
-numpy
+dash == 2.0.0
+dash-bootstrap-components == 1.0.2
+dash-labs == 0.3.0
+gunicorn == 20.0.4
+plotly == 5.4.0
+numpy == 1.17.0

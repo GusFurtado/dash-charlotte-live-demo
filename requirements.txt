@@ -1,0 +1,8 @@
+dash-charlotte
+
+dash
+dash-bootstrap-components
+dash-labs
+gunicorn
+plotly
+numpy

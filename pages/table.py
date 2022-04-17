@@ -6,7 +6,7 @@ from dash_charlotte.components.table import (
     TableDropdownCol,
     TableInputCol
 )
-from dash_charlotte.themes import charlotte_light as cl
+from dash_charlotte.themes import charlotte_dark as cd
 
 from dash import (
     register_page,
@@ -47,7 +47,7 @@ CELL_STYLE = {
 HEADER_STYLE = {
     'padding': 10,
     'text-align': 'center',
-    'background-color': str(cl.BLUE)
+    'background-color': str(cd.BLUE)
 }
 
 BODY_STYLE = {
@@ -59,10 +59,10 @@ FRUIT_FORMATTING = lambda td: html.B(
     children = td,
     style = {
         'color': {
-            'Banana': str(cl.YELLOW),
-            'Apple': str(cl.RED),
-            'Orange': str(cl.ORANGE),
-            'Grape': str(cl.PURPLE)
+            'Banana': str(cd.YELLOW),
+            'Apple': str(cd.RED),
+            'Orange': str(cd.ORANGE),
+            'Grape': str(cd.PURPLE)
         }[td]
     }
 )
@@ -142,13 +142,13 @@ layout = dbc.Container([
             columns = [col1, col2, col3, col4, col5, col6, col7],
             body_style = BODY_STYLE,
             bordered = True,
-            dark = False,
+            dark = True,
             hover = True,
             responsive = True,
             striped = True,
             className = 'mb-0'
         ),
-        className = 'shadow'
+        className = 'shadow mt-5'
     ),
     dbc.Alert(
         id = 'table_alert',

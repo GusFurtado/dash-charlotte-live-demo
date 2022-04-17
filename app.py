@@ -61,6 +61,11 @@ nav_links = [
         icon = 'bx bx-box',
         href = '/box'
     ),
+    DrawerSingleItem(
+        name = 'Table',
+        icon = 'bx bx-table',
+        href = '/table'
+    ),
     DrawerFooter(
         title = 'Footer',
         subtitle = 'Footer Subtitle'

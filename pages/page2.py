@@ -48,7 +48,8 @@ layout = [
                     )
                 )
             ),
-            width = 6
+            width = 12,
+            lg = 6
         ),
         dbc.Col(
             Box(
@@ -70,7 +71,8 @@ layout = [
                     )
                 )
             ),
-            width = 6
+            width = 12,
+            lg = 6
         )
     ],
         className = 'g-0'

@@ -6,7 +6,7 @@ from dash import (
     State
 )
 
-from dash_charlotte import layouts
+from dash_charlotte.layouts import login
 
 
 
@@ -18,15 +18,17 @@ register_page(
 
 
 
-left_panel = layouts.LoginForm(
+left_panel = login.LoginForm(
     id = 'login-form',
 )
 
-right_panel = layouts.LoginSvgPanel(
-    src = '/assets/img/register.svg'
+right_panel = login.LoginSvgPanel(
+    src = '/assets/img/register.svg',
+    background = 'blue',
+    padding = 50
 )
 
-layout = layouts.LoginPage(
+layout = login.LoginPage(
     left_panel = left_panel,
     right_panel = right_panel
 )

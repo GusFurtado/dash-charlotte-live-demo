@@ -1,6 +1,5 @@
-from dash import Dash
+from dash import Dash, page_container
 import dash_bootstrap_components as dbc
-import dash_labs as dl
 
 from dash_charlotte import themes
 from dash_charlotte.components import (
@@ -18,11 +17,12 @@ from dash_charlotte.components import (
 app = Dash(
     name = __name__,
     title = 'Dash Charlotte',
-    plugins = [dl.plugins.pages],
+    use_pages = True,
     external_stylesheets = [
         dbc.themes.BOOTSTRAP,
         themes.BOOTSTRAP,
         themes.BOXICONS,
+        themes.BUTTONS,
         themes.FONTAWESOME,
         themes.CHARLOTTE_DARK
     ]
@@ -75,7 +75,7 @@ nav_links = [
 
 
 app.layout = Dashboard(
-    children = dl.plugins.page_container,
+    children = page_container,
     navbar = Navbar(
         title = 'Navbar'
     ),
